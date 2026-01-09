@@ -3,12 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>East Cars</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>CARXPO LTD </title>
+  <style>
+    /* Reset بسيط */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* الوضع الافتراضي – خلفية بيضاء ونص أسود */
+    body {
+      background-color: #fff;
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    /* الحاوية */
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    /* الشعار */
+    .logo {
+      max-width: 90%;
+      width: 520px;
+      height: auto;
+      transition: transform 0.3s;
+    }
+    .logo:hover {
+      transform: scale(1.05);
+    }
+
+    /* رقم الهاتف */
+    .phone {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.5rem;
+      color: inherit; /* يتغير النص فقط */
+    }
+    .phone img {
+      width: 30px;
+      height: 30px;
+      /* لا نغير الألوان الأخرى */
+    }
+
+    /* الوضع الداكن – عكس الأبيض والأسود فقط */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #000; /* الخلفية تصبح سوداء */
+        color: #fff; /* النص يصبح أبيض */
+      }
+      /* الصور والألوان الأخرى تبقى كما هي */
+    }
+
+    /* استجابة للأجهزة الصغيرة */
+    @media (max-width: 600px) {
+      .phone {
+        font-size: 1.2rem;
+      }
+      .phone img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <img src="images/logo.png" alt="CARXPO LOGO" class="logo">
+    <img src="images/logo.png" alt="carxpo Logo" class="logo">
     <div class="phone">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
       <span>+82 10 2118 9495</span>
