@@ -6,16 +6,18 @@
   font-family: Arial, sans-serif;
 }
 
+/* الوضع الافتراضي – أسود */
 body {
-  background-color: #000; /* خلفية سوداء */
+  background-color: #000;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  color: #fff;
   text-align: center;
 }
 
+/* الحاوية */
 .container {
   display: flex;
   flex-direction: column;
@@ -23,31 +25,52 @@ body {
   gap: 20px;
 }
 
+/* الشعار */
 .logo {
   max-width: 90%;
-  width: 520px; /* عرض الشعار */
+  width: 520px;
   height: auto;
   transition: transform 0.3s;
 }
-
-/* تأثير تكبير عند المرور على الشعار */
 .logo:hover {
   transform: scale(1.05);
 }
 
+/* رقم الهاتف */
 .phone {
   display: flex;
   align-items: center;
   gap: 10px;
   font-size: 1.5rem;
-  color: #fff;
+  color: inherit; /* يتغير حسب الوضع */
 }
-
 .phone img {
   width: 30px;
   height: 30px;
 }
 
+/* دعم الوضع الفاتح أو الداكن حسب إعدادات العميل */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #fff;
+    color: #000;
+  }
+  .phone img {
+    filter: invert(1); /* يعكس أيقونة WhatsApp لتناسب الخلفية الفاتحة */
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000;
+    color: #fff;
+  }
+  .phone img {
+    filter: invert(0); /* أيقونة طبيعية للخلفية الداكنة */
+  }
+}
+
+/* استجابة للأجهزة الصغيرة */
 @media (max-width: 600px) {
   .phone {
     font-size: 1.2rem;
