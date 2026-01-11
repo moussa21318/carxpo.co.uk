@@ -26,7 +26,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 20px;
+      gap: 15px; /* تقليل المسافة بين العناصر */
+      padding-top: 20px;
     }
 
     .logo {
@@ -38,6 +39,12 @@
 
     .logo:hover {
       transform: scale(1.05);
+    }
+
+    .description {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      max-width: 90%;
     }
 
     .button {
@@ -85,12 +92,22 @@
         width: 20px;
         height: 20px;
       }
+
+      .description {
+        font-size: 1rem;
+        padding: 0 10px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <img src="images/logo.png" alt="carxpo Logo" class="logo" />
+
+    <p class="description">
+      وسيطك لشراء سيارتك من كوريا الجنوبية<br>
+      للحجز والطلب والاستفسار راسلنا عبر واتساب أو صفحة الفايسبوك
+    </p>
 
     <a href="https://wa.me/821021189495" target="_blank" class="button whatsapp" aria-label="تواصل معنا عبر واتساب">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" />
