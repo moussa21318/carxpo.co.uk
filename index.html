@@ -3,125 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
   <title>CARXPO LTD</title>
-
-  <!-- Open Graph Meta Tags (WhatsApp / Facebook) -->
   <meta property="og:title" content="CARXPO LTD" />
   <meta property="og:description" content="وسيطك لشراء سيارتك من كوريا الجنوبية" />
   <meta property="og:image" content="https://www.carxpo.co.uk/images/logo.png" />
   <meta property="og:url" content="https://www.carxpo.co.uk/" />
   <meta property="og:type" content="website" />
-
-  <!-- Twitter / WhatsApp large preview -->
   <meta name="twitter:card" content="summary_large_image">
-
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background-color: #fff;
-      color: #000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding-top: 20px;
-    margin-top: -120px; /* ← هذا هو السطر الذي يرفع المحتوى */
-    }
-
-    .logo {
-      max-width: 90%;
-      width: 520px;
-      height: auto;
-      transition: transform 0.3s;
-    }
-
-    .logo:hover {
-      transform: scale(1.05);
-    }
-
-    .description {
-      font-size: 1.2rem;
-      line-height: 1.6;
-      max-width: 90%;
-    }
-
-    .button {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 1.2rem;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 8px;
-      text-decoration: none;
-      color: #fff;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .whatsapp {
-      background-color: #25D366;
-    }
-
-    .whatsapp:hover {
-      background-color: #1ebe5d;
-    }
-
-    .facebook {
-      background-color: #1877f2;
-    }
-
-    .facebook:hover {
-      background-color: #0e5aab;
-    }
-
-    .button img {
-      width: 24px;
-      height: 24px;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background-color: #fff; color: #000; display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; }
+    .container { display: flex; flex-direction: column; align-items: center; gap: 15px; padding-top: 20px; margin-top: -120px; }
+    .logo { max-width: 90%; width: 520px; height: auto; transition: transform 0.3s; }
+    .logo:hover { transform: scale(1.05); }
+    .description { font-size: 1.2rem; line-height: 1.6; max-width: 90%; }
+    .button { display: flex; align-items: center; gap: 10px; font-size: 1.2rem; padding: 12px 20px; border: none; border-radius: 8px; text-decoration: none; color: #fff; cursor: pointer; transition: background-color 0.3s; }
+    .whatsapp { background-color: #25D366; }
+    .whatsapp:hover { background-color: #1ebe5d; }
+    .facebook { background-color: #1877f2; }
+    .facebook:hover { background-color: #0e5aab; }
+    .orange { background-color: #f58220; }
+    .orange:hover { background-color: #d96e12; }
+    .button img { width: 24px; height: 24px; }
     @media (max-width: 600px) {
-      .button {
-        font-size: 1rem;
-        padding: 10px 16px;
-      }
-
-      .button img {
-        width: 20px;
-        height: 20px;
-      }
-
-      .description {
-        font-size: 1rem;
-        padding: 0 10px;
-      }
+      .button { font-size: 1rem; padding: 10px 16px; }
+      .button img { width: 20px; height: 20px; }
+      .description { font-size: 1rem; padding: 0 10px; }
     }
   </style>
 </head>
-
 <body>
   <div class="container">
     <img src="images/logo.png" alt="CARXPO Logo" class="logo" />
-
     <p class="description">
       وسيطك لشراء سيارتك من كوريا الجنوبية<br>
       للحجز والطلب والاستفسار راسلنا عبر واتساب أو صفحة الفايسبوك
     </p>
-
     <a href="https://wa.me/821021189495" target="_blank"
        class="button whatsapp"
        aria-label="تواصل معنا عبر واتساب">
@@ -129,13 +46,17 @@
            alt="WhatsApp Icon" />
       <span>+82 10 2118 9495</span>
     </a>
-
     <a href="https://www.facebook.com/CarXpoLTD" target="_blank"
        class="button facebook"
        aria-label="صفحتنا على فيسبوك">
       <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg"
            alt="Facebook Icon" />
       <span>Facebook: CarXpo</span>
+    </a>
+    <a href="https://www.cigbooking.com/track" target="_blank"
+       class="button orange"
+       aria-label="ابحث عن سيارتك">
+      <span>🔍 ابحث عن السيارة</span>
     </a>
   </div>
 </body>
