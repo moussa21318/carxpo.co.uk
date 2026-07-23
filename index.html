@@ -25,10 +25,13 @@
     .orange { background-color: #f58220; }
     .orange:hover { background-color: #d96e12; }
     .button img { width: 24px; height: 24px; }
+    .tracking-section { width: 100%; max-width: 600px; margin-top: 20px; }
+    .tracking-section iframe { width: 100%; height: 500px; border: 1px solid #ddd; border-radius: 8px; }
     @media (max-width: 600px) {
       .button { font-size: 1rem; padding: 10px 16px; }
       .button img { width: 20px; height: 20px; }
       .description { font-size: 1rem; padding: 0 10px; }
+      .tracking-section iframe { height: 400px; }
     }
   </style>
 </head>
@@ -58,6 +61,12 @@
        aria-label="ابحث عن سيارتك">
       <span>🔍 ابحث عن السيارة</span>
     </a>
+    <div class="tracking-section">
+      <h2 style="margin-bottom: 10px; font-size: 1.1rem; color: #333;">تتبع الشحنة</h2>
+      <iframe src="https://www.cigbooking.com/track"
+              title="CIG Shipping Tracking"
+              loading="lazy"></iframe>
+    </div>
   </div>
 </body>
 </html>
