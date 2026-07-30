@@ -15,6 +15,9 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
 
+  <!-- Favicon -->
+  <link rel="icon" href="images/logo.png" type="image/png">
+
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
     body { 
@@ -25,18 +28,18 @@
       align-items: center; 
       height: 100vh; 
       text-align: center; 
+      direction: rtl; /* Arabic-friendly */
     }
     .container { 
       display: flex; 
       flex-direction: column; 
       align-items: center; 
-      gap: 15px; 
-      padding-top: 20px; 
-      margin-top: -120px; 
+      gap: 20px; 
+      padding: 20px; 
     }
     .logo { 
       max-width: 90%; 
-      width: 520px; 
+      width: 320px; 
       height: auto; 
       transition: transform 0.3s; 
     }
@@ -48,10 +51,14 @@
     }
     .button { 
       display: flex; 
+      flex-direction: row-reverse; /* icon on right, text on left */
       align-items: center; 
+      justify-content: center; 
       gap: 10px; 
       font-size: 1.2rem; 
       padding: 12px 20px; 
+      min-width: 250px; 
+      height: 50px; 
       border: none; 
       border-radius: 8px; 
       text-decoration: none; 
@@ -68,14 +75,14 @@
     .facebook { background-color: #1877f2; }
     .facebook:hover { background-color: #0e5aab; }
 
-    .red { background-color: #d91212; }
-    .red:hover { background-color: #a50e0e; } /* fixed hover color to stay red */
+    .portal { background-color: #333; }
+    .portal:hover { background-color: #555; }
 
     .orange { background-color: #f58220; }
     .orange:hover { background-color: #d96e12; }
 
     @media (max-width: 600px) {
-      .button { font-size: 1rem; padding: 10px 16px; }
+      .button { font-size: 1rem; padding: 10px 16px; min-width: 200px; height: 45px; }
       .button img { width: 20px; height: 20px; }
       .description { font-size: 1rem; padding: 0 10px; }
     }
@@ -88,29 +95,29 @@
       وسيطك لشراء سيارتك من كوريا الجنوبية<br>
       للحجز والطلب والاستفسار راسلنا عبر واتساب أو صفحة الفايسبوك
     </p>
-    <a href="https://wa.me/821021189495" target="_blank"
+    <a href="https://wa.me/821021189495" target="_blank" rel="noopener noreferrer"
        class="button whatsapp"
        aria-label="تواصل معنا عبر واتساب">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
            alt="WhatsApp Icon" />
       <span>+82 10 2118 9495</span>
     </a>
-    <a href="https://www.facebook.com/CarXpoLTD" target="_blank"
+    <a href="https://www.facebook.com/CarXpoLTD" target="_blank" rel="noopener noreferrer"
        class="button facebook"
        aria-label="صفحتنا على فيسبوك">
       <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg"
            alt="Facebook Icon" />
       <span>Facebook: CarXpo</span>
     </a>
-    <a href="https://carxpo21318.vercel.app" target="_blank"
-       class="button red"
-       aria-label="Client Portal">
-      <span>Client Portal</span>
+    <a href="https://carxpo21318.vercel.app" target="_blank" rel="noopener noreferrer"
+       class="button portal"
+       aria-label="بوابة العملاء">
+      <span>🔑 بوابة العملاء</span>
     </a>
-    <a href="https://www.cigbooking.com/track" target="_blank"
+    <a href="https://www.cigbooking.com/track" target="_blank" rel="noopener noreferrer"
        class="button orange"
        aria-label="ابحث عن سيارتك">
-      <span>🔍 Track Your Car "CIG"</span>
+      <span>🔍 تتبع سيارتك "CIG"</span>
     </a>
   </div>
 </body>
